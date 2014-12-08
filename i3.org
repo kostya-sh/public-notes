@@ -1,4 +1,6 @@
-* Key-bindings
+#+FILETAGS: :i3:
+
+* Key-bindings :keybinding:
 
 ** With Mod
 - W :: tabbed layout

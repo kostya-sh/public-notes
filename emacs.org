@@ -1,3 +1,5 @@
+#+FILETAGS: :emacs:
+
 * General
 
 ** List of packages
@@ -11,7 +13,7 @@
 - proced                 :: show running processes
 - delete-duplicate-lines :: delete duplicate lines in the active region
 
-** Useful key-bindings
+** Useful key-bindings :keybinding:
 - C-x C-e             :: evaluate sexp
 - C-x (, C-x ), C-x e :: start/end/execute keyboard macro
 - M-<, M->            :: move to the beginning/end of file
@@ -32,7 +34,7 @@
 - C-s, C-r            :: i-search forward/backward
 - C-M-s, C-M-r        :: regexp i-search forward/backward
 
-** Key-bindings (custom)
+** Key-bindings (custom) :keybinding:custom:
 - M-<up>, M-<down> :: move up/down the current line (see .emacs)
 - M-y              :: show kill ring (helm)
 - C-c i            :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
@@ -54,7 +56,7 @@
 
 * Modes
 ** haskell-mode
-*** Key-bindings (custom)
+*** Key-bindings (custom) :keybinding:custom:
 - C-c C-c :: compile
 - C-c C-z :: switch to/from haskell interactive console
 - C-c C-l :: load file in the interactive interpreter
@@ -73,13 +75,13 @@
 **** DONE Make selection work using (C-)S-Arrow in org-mode
      This is controlled by org-support-shift-select
 
-*** Key-bindings (global, custom)
+*** Key-bindings (global, custom) :keybinding:custom:
 - C-c c :: capture
 - C-c l :: store link
 - C-c a :: agenda
 - C-c b :: switch buffer
 
-*** Key-bindings (standard)
+*** Key-bindings (standard) :keybinding:
 - <TAB>, S-<TAB>         :: visibility cycling
 - C-c C-j                :: org-goto (similar to Ctrl+F3 in Eclipse)
 - M-<arrow>, M-S-<arrow> :: promote/demote to the next/prev level
@@ -93,7 +95,7 @@ Inserting/deliting/moving rows columns: M-<Arrow>, M-S-<Arrow>
 
 Inserting a hline: C-c -, C-c <RET>
 
-**** Calcs key-bindings:
+**** Calcs key-bindings: :keybinding:
 - C-c +     :: show sum of the current column
 - C-c *     :: recalculate the current row
 - C-u C-c * :: recalculate whole table
@@ -110,14 +112,14 @@ Sample Table with formulas:
 
 ** helm-mode
 
-*** Key-bindings
+*** Key-bindings :keybinding:
 - C-s     :: grep (in files or buffers)
 - C-u C-s :: recursive grep (in files or buffers)
 
-*** Key-bindings (custom, global)
+*** Key-bindings (custom, global) :keybinding:custom:
 - M-y     :: show kill ring (helm)
 - C-c i   :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
 
 ** magit-mode
-*** Key-bindings (custom)
+*** Key-bindings (custom) :keybinding:custom:
 - C-c m :: magit-status

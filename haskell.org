@@ -1,3 +1,5 @@
+#+FILETAGS: :haskell:
+
 * General
 ** Prelude
 *** tuples
