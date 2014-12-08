@@ -1,0 +1,38 @@
+* General
+** Prelude
+*** tuples
+*** lists
+*** strings
+String in Haskell is a list of Chars: [Char]
+*** functions
+- map
+- filter
+- foldl
+- foldr
+
+* Useful functions
+** Numerical functions
+- mod :: modulo (reminder after numerical division)
+- div :: integer division
+- even/odd :: checks if a number is even/odd
+- lcm :: lowest common multiplier
+- gcd :: greatest common divisor
+
+** List functions
+
+- takeWhile condition list ::
+- length ::
+- head ::
+- last ::
+- tail ::
+- null ::
+- Data.List(nub) :: remove duplicates
+
+** String functions
+- show
+- read
+- Char.digitToInt
+
+** Operators
+- $! :: strict (non-lazy) apply function operator
+

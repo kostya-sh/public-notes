@@ -1,0 +1,123 @@
+* General
+
+** List of packages
+- helm
+- haskell-mode
+- magit
+- go-mode
+- yasnippet
+
+** Useful commands
+- proced                 :: show running processes
+- delete-duplicate-lines :: delete duplicate lines in the active region
+
+** Useful key-bindings
+- C-x C-e             :: evaluate sexp
+- C-x (, C-x ), C-x e :: start/end/execute keyboard macro
+- M-<, M->            :: move to the beginning/end of file
+- M-$                 :: correct word (spell check)
+- M-g M-g             :: goto line
+- C-x z z z z         :: repeat last command
+- C-x C-{+,-,0}       :: change font size
+- C-S-<BACKSPACE>     :: kill whole line
+- C-x h               :: select whole buffer (like C-a)
+- C-x 0               :: delete windows (i.e. maximize other window)
+- C-x C-j             :: dired-jump (show current file in dired)
+- M-g <TAB>           :: goto column
+- C-x <SPACE>         :: rectangular selection
+- M-q                 :: fill paragraph
+- M-%                 :: query-replace
+- C-g C-z             :: stop undoing and start redoing
+- M-s .               :: search symbol at point
+- C-s, C-r            :: i-search forward/backward
+- C-M-s, C-M-r        :: regexp i-search forward/backward
+
+** Key-bindings (custom)
+- M-<up>, M-<down> :: move up/down the current line (see .emacs)
+- M-y              :: show kill ring (helm)
+- C-c i            :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
+
+** todo list
+*** DONE Install markdown package
+*** TODO Figure out redo functionality (and bind to C-y if possible), try undo-tree package
+*** TODO Install flycheck
+*** TODO (?) Key-binding go to terminal (C-C t)
+*** TODO (?) Copy file name into clipboard (function and key-binding)
+*** TODO (?) Make M-<up>, M-<down> work on the selected region
+*** TODO Install and configure company-mode (completion)
+*** DONE (?) Install expand-region
+*** TODO Make yasnippet work by default
+*** DONE spell check
+    Use ispell or flyspell-mode for that
+*** DONE Make selection non-persistent
+    This is done by customizing delete-selection-mode variable
+
+* Modes
+** haskell-mode
+*** Key-bindings (custom)
+- C-c C-c :: compile
+- C-c C-z :: switch to/from haskell interactive console
+- C-c C-l :: load file in the interactive interpreter
+- C-c C-i :: show information about function/variable at cursor
+- C-c C-t :: show type of function/variable at cursor
+
+*** todo list
+**** TODO Make <DEL> and <BACKSPACE> delete selection in literate haskell-mode
+     It looks like it can be fixed by changing haskell-indentation.el
+     [X] Report bug (and send possible patch)
+
+** org-mode
+
+*** todo list
+**** DONE Enable flyspell mode for org-mode automatically
+**** DONE Make selection work using (C-)S-Arrow in org-mode
+     This is controlled by org-support-shift-select
+
+*** Key-bindings (global, custom)
+- C-c c :: capture
+- C-c l :: store link
+- C-c a :: agenda
+- C-c b :: switch buffer
+
+*** Key-bindings (standard)
+- <TAB>, S-<TAB>         :: visibility cycling
+- C-c C-j                :: org-goto (similar to Ctrl+F3 in Eclipse)
+- M-<arrow>, M-S-<arrow> :: promote/demote to the next/prev level
+- C-c ^                  :: sort list
+- C-c .                  :: insert timestamp
+
+*** Working with tables
+Realigning and moving around: <TAB>, S-<TAB>, C-c C-c, <RET>, M-a, M-e
+
+Inserting/deliting/moving rows columns: M-<Arrow>, M-S-<Arrow>
+
+Inserting a hline: C-c -, C-c <RET>
+
+**** Calcs key-bindings:
+- C-c +     :: show sum of the current column
+- C-c *     :: recalculate the current row
+- C-u C-c * :: recalculate whole table
+- C-c '     :: enter formula editor
+
+Sample Table with formulas:
+| N |   formula |
+|---+-----------|
+| 1 |         2 |
+| 2 | 2.4142136 |
+| 4 |         3 |
+| 5 | 3.2360680 |
+#+TBLFM: $2=sqrt($1)+1
+
+** helm-mode
+
+*** Key-bindings
+- C-s     :: grep (in files or buffers)
+- C-u C-s :: recursive grep (in files or buffers)
+
+*** Key-bindings (custom, global)
+- M-y     :: show kill ring (helm)
+- C-c i   :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
+
+** magit-mode
+*** Key-bindings (custom)
+- C-c m :: magit-status
