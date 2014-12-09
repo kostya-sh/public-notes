@@ -12,6 +12,7 @@
 ** Useful commands
 - proced                 :: show running processes
 - delete-duplicate-lines :: delete duplicate lines in the active region
+- auto-revert-tail-mode  :: like tail -f
 
 ** Useful key-bindings :keybinding:
 - C-x C-e             :: evaluate sexp
@@ -33,11 +34,13 @@
 - M-s .               :: search symbol at point
 - C-s, C-r            :: i-search forward/backward
 - C-M-s, C-M-r        :: regexp i-search forward/backward
+- C-x C-q             :: toggle read-only
 
 ** Key-bindings (custom) :keybinding:custom:
 - M-<up>, M-<down> :: move up/down the current line (see .emacs)
 - M-y              :: show kill ring (helm)
 - C-c i            :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
+- C-c b            :: helm-bookmarks (list, jump, add)
 
 ** todo list
 *** DONE Install markdown package
