@@ -41,6 +41,7 @@
 - M-y              :: show kill ring (helm)
 - C-c i            :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
 - C-c b            :: helm-bookmarks (list, jump, add)
+- C-=              :: expand-region
 
 ** todo list
 *** DONE Install markdown package
@@ -51,7 +52,6 @@
 *** TODO (?) Make M-<up>, M-<down> work on the selected region
 *** TODO Install and configure company-mode (completion)
 *** DONE (?) Install expand-region
-*** TODO Make yasnippet work by default
 *** DONE spell check
     Use ispell or flyspell-mode for that
 *** DONE Make selection non-persistent
