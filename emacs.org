@@ -8,6 +8,8 @@
 - magit
 - go-mode
 - yasnippet
+- expand-region
+- company-mode
 
 ** Useful commands
 - proced                 :: show running processes
@@ -50,7 +52,7 @@
 *** TODO (?) Key-binding go to terminal (C-C t)
 *** TODO (?) Copy file name into clipboard (function and key-binding)
 *** TODO (?) Make M-<up>, M-<down> work on the selected region
-*** TODO Install and configure company-mode (completion)
+*** DONE Install and configure company-mode (completion)
 *** DONE (?) Install expand-region
 *** DONE spell check
     Use ispell or flyspell-mode for that
@@ -126,3 +128,4 @@ Sample Table with formulas:
 ** magit-mode
 *** Key-bindings (custom) :keybinding:custom:
 - C-c m :: magit-status
+
