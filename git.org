@@ -1,0 +1,5 @@
+#+FILETAGS: :git:
+
+* Working with branches
+** Delete remote branch :command:
+git push origin --delete <branchName>
