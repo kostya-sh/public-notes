@@ -10,6 +10,9 @@
 - yasnippet
 - expand-region
 - company-mode
+- smartscan
+- projectile
+- helm-projectile
 
 ** Useful commands
 - proced                 :: show running processes
@@ -37,6 +40,8 @@
 - C-s, C-r            :: i-search forward/backward
 - C-M-s, C-M-r        :: regexp i-search forward/backward
 - C-x C-q             :: toggle read-only
+- M-g n, C-x `        :: next error (also works in occur)
+- M-g p               :: previous error (also works in occur)
 
 ** Key-bindings (custom) :keybinding:custom:
 - M-<up>, M-<down> :: move up/down the current line (see .emacs)
@@ -124,8 +129,17 @@ Sample Table with formulas:
 *** Key-bindings (custom, global) :keybinding:custom:
 - M-y     :: show kill ring (helm)
 - C-c i   :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
+- C-x p   :: helm-projectile-find-file-in-known-projects
+
+** projectile
+*** Key-bindings :keybinding:
+- C-c p p :: switch project
 
 ** magit-mode
 *** Key-bindings (custom) :keybinding:custom:
 - C-c m :: magit-status
 
+** smartscan-mode
+*** Key-bindings
+- M-n :: jump to the next occurrence of the symbol under the cursor
+- M-p :: previous occurrence
