@@ -1,5 +1,8 @@
 #+FILETAGS: :git:
 
 * Working with branches
-** Delete remote branch :command:
-git push origin --delete <branchName>
+** Delete remote branch                                             :command:
+git push origin --delete branchName
+
+** Create remote branch from local                                  :command:
+git push -u origin localBranchName:remoteBranchName
