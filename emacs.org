@@ -134,7 +134,9 @@ Sample Table with formulas:
 ** projectile
 *** Key-bindings :keybinding:
 - C-c p p :: switch project
-
+  - M-g :: magit
+  - M-d :: dired
+  - M-e :: eshell
 ** magit-mode
 *** Key-bindings (custom) :keybinding:custom:
 - C-c m :: magit-status
@@ -143,3 +145,6 @@ Sample Table with formulas:
 *** Key-bindings
 - M-n :: jump to the next occurrence of the symbol under the cursor
 - M-p :: previous occurrence
+** dired
+*** Key-bindings                                          :keybinding:custom:
+- M-RET :: open file using default tool
