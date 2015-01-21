@@ -1,0 +1,44 @@
+#+FILETAGS: :go:
+
+* Standard Library
+** builtin (builtin.go)
+- primitive types
+- append/copy (for slice)
+- delete (from map)
+- len/cap (for array, slice, map)
+- make/new
+- close (channel)
+- panic/recover
+- print/println (for debugging, not guaranteed to stay in the language)
+- error interface
+
+** errors (errors.go)
+- errors.New(string)
+
+** io (io.go, multi.go, pipe.go)
+*** interfaces
+- Reader/Writer/Closer/Seeker and their combinations (e.g. ReadWriteSeeker)
+- ReaderFrom/WriterTo
+- ReaderAt/WriterAt
+- ByteReader/ByteScanner/ByteWriter
+- RuneReader/RuneScanner
+*** function
+- Read/Write/Copy, etc
+- MultiReader/MultiWriter
+- Pipe
+
+*** notes
+- struct SectionReader exported because it implements several interfaces
+- os.Open opens files in read-only mode by default
+
+** ioutil (io/ioutil/{ioutil.go, tempfile.go})
+- ReadAll/ReadFile/WriteFile
+- ReadDir
+- Discard
+- TempFile, TempDir
+
+** testing
+*** Example
+ExampleXXX functions
+- with "Output:" comment are executed and output is compared
+- without "Output:" comment are compiled
