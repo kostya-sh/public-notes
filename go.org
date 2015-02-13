@@ -37,6 +37,10 @@
 - Discard
 - TempFile, TempDir
 
+** expvar (expvar.go)
+- expose int, float, map via HTTP JSON rest call
+- "simplified JMX"
+
 ** testing
 *** Example
 ExampleXXX functions
