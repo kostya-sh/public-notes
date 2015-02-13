@@ -97,6 +97,9 @@
 - M-<arrow>, M-S-<arrow> :: promote/demote to the next/prev level
 - C-c ^                  :: sort list
 - C-c .                  :: insert timestamp
+- C-c C-s                :: insert SCHEDULED along with a stamp
+- C-c C-d                :: insert DEADLINE along with a stamp
+- C-c C-c                :: ask and insert tags
 
 *** Working with tables
 Realigning and moving around: <TAB>, S-<TAB>, C-c C-c, <RET>, M-a, M-e
