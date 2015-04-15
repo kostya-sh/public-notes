@@ -109,10 +109,13 @@ Inserting/deliting/moving rows columns: M-<Arrow>, M-S-<Arrow>
 Inserting a hline: C-c -, C-c <RET>
 
 **** Calcs key-bindings: :keybinding:
-- C-c +     :: show sum of the current column
-- C-c *     :: recalculate the current row
-- C-u C-c * :: recalculate whole table
-- C-c '     :: enter formula editor
+- C-c +       :: show sum of the current column
+- C-c *       :: recalculate the current row
+- C-u C-c C-c :: recalculate whole table
+- C-c C-c     :: recalculate whole table (on TBLFM line)
+- C-c '       :: enter formula editor (use S+arrow, M+arrow)
+- C-c ?       :: show how to reference the current cell in the formula
+- C-c }       :: toggle visualization of line and row numbers
 
 Sample Table with formulas:
 | N |   formula |
