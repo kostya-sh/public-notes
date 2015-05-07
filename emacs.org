@@ -143,6 +143,9 @@ Sample Table with formulas:
   - M-g :: magit
   - M-d :: dired
   - M-e :: eshell
+- C-c p f :: find file in current project
+- C-c p i :: invalidate current project cache
+
 ** magit-mode
 *** Key-bindings (custom) :keybinding:custom:
 - C-c m :: magit-status
