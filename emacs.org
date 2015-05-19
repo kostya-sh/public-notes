@@ -78,6 +78,35 @@
      It looks like it can be fixed by changing haskell-indentation.el
      [X] Report bug (and send possible patch)
 
+** golang-mode
+*** Key-bindings (standard)                                      :keybinding:
+- C-c C-d :: show declaration
+- C-c C-j :: go to definition
+- C-M-a   :: go to the beginning of the current function
+- C-M-e   :: go to the end of the current function
+
+*** Key-bindings (custom)                                 :keybinding:custom:
+- M-.     :: go to definition
+- M-*     :: go back
+- C-c C-c :: compile
+
+*** Snippets
+- if, for, ierr
+- struct, interface
+
+*** Commands (M-x)
+- godoc
+
+*** Other notes
+"C-c i" to show imenu
+"C-c p c" to compile project
+
+
+*** TODO errcheck
+    https://github.com/kisielk/errcheck
+    https://github.com/dominikh/go-errcheck.el
+*** TODO flycheck
+
 ** org-mode
 
 *** todo list
