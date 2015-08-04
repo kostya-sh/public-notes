@@ -122,6 +122,9 @@
 - +strike-through+
 - #+BEGIN_SRC lang ... #+END_SRC
 
+*** Easy templates
+- <s followed by <TAB> :: SRC template
+
 *** Key-bindings (global, custom) :keybinding:custom:
 - C-c c :: capture
 - C-c l :: store link
