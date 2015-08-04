@@ -1,5 +1,29 @@
 #+FILETAGS: :go:
 
+* Standard tools
+** build
+~go build -i~ makes subsequent builds faster by installing packages that are
+dependencies of the target.
+
+** test
+~go test -i~ makes running subsequent ~go test~ invocations faster by
+installing packages that are dependencies of the test.
+
+~-bench regexp~ - run only benchmarks matching the regexp (use regexp=. for all)
+
+~-run regexp~ - run only tests matching the regexp
+
+
+* Built-in types
+** slice
+*** clearing slice
+#+BEGIN_SRC go
+  s = s[:0]
+#+END_SRC
+
+Note: this might lead to memory leaks if slice holds pointers (including
+interfaces, maps, etc).
+
 * Standard Library
 ** builtin (builtin.go)
 - primitive types
@@ -46,3 +70,9 @@
 ExampleXXX functions
 - with "Output:" comment are executed and output is compared
 - without "Output:" comment are compiled
+
+** binary (encoding/binary/{varint.go, binary.go})
+- encoding/decoding unsigned integers using little-endian or big-endian byte order
+- binary.Size - size of fixed-sized value (e.g. slice of structs with int fields)
+- Read/Write methods for slices and structs (reflection based)
+- varint encoding (ULEB-128 for unsigned, signed mapped to unsigned using zig-zag encoding)
