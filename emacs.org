@@ -108,11 +108,19 @@
 *** TODO flycheck
 
 ** org-mode
-
 *** todo list
 **** DONE Enable flyspell mode for org-mode automatically
 **** DONE Make selection work using (C-)S-Arrow in org-mode
      This is controlled by org-support-shift-select
+
+*** Markup
+- *bold*
+- /italic/
+- _underlined_
+- =verbatim=
+- ~code~
+- +strike-through+
+- #+BEGIN_SRC lang ... #+END_SRC
 
 *** Key-bindings (global, custom) :keybinding:custom:
 - C-c c :: capture
@@ -129,6 +137,7 @@
 - C-c C-s                :: insert SCHEDULED along with a stamp
 - C-c C-d                :: insert DEADLINE along with a stamp
 - C-c C-c                :: ask and insert tags
+- C-c '                  :: edit code block (in begin_src/end_src)
 
 *** Working with tables
 Realigning and moving around: <TAB>, S-<TAB>, C-c C-c, <RET>, M-a, M-e
