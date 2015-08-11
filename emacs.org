@@ -89,6 +89,8 @@
 - M-.     :: go to definition
 - M-*     :: go back
 - C-c C-c :: compile
+- C-c d   :: godoc-at-point
+- C-c e   :: go-errcheck
 
 *** Snippets
 - if, for, ierr
@@ -102,7 +104,7 @@
 "C-c p c" to compile project
 
 
-*** TODO errcheck
+*** DONE errcheck
     https://github.com/kisielk/errcheck
     https://github.com/dominikh/go-errcheck.el
 *** TODO flycheck
