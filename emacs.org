@@ -202,4 +202,5 @@ Sample Table with formulas:
 - M-p :: previous occurrence
 ** dired
 *** Key-bindings                                          :keybinding:custom:
-- M-RET :: open file using default tool
+- M-RET   :: open file using default tool
+- C-x C-q :: enter wdired to rename/move files
