@@ -94,6 +94,7 @@
 - C-c t t :: go-test-current-test
 - C-c t f :: go-test-current-file
 - C-c t p :: go-test-current-project
+- C-c t d :: debug current test (my-go-debug-current-test)
 
 *** Snippets
 - if, for, ierr
