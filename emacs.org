@@ -42,6 +42,7 @@
 - C-x C-q             :: toggle read-only
 - M-g n, C-x `        :: next error (also works in occur)
 - M-g p               :: previous error (also works in occur)
+- C-c left/right      :: undo/redo window layout (winner-mode)
 
 ** Key-bindings (custom) :keybinding:custom:
 - M-<up>, M-<down> :: move up/down the current line (see .emacs)
