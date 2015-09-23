@@ -91,7 +91,6 @@
 - M-*     :: go back
 - C-c C-c :: compile
 - C-c d   :: godoc-at-point
-- C-c e   :: go-errcheck
 - C-c t t :: go-test-current-test
 - C-c t f :: go-test-current-file
 - C-c t p :: go-test-current-project
@@ -108,11 +107,6 @@
 "C-c i" to show imenu
 "C-c p c" to compile project
 
-
-*** DONE errcheck
-    https://github.com/kisielk/errcheck
-    https://github.com/dominikh/go-errcheck.el
-*** TODO flycheck
 
 ** org-mode
 *** todo list
