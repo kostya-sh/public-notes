@@ -6,3 +6,13 @@ git push origin --delete branchName
 
 ** Create remote branch from local                                  :command:
 git push -u origin localBranchName:remoteBranchName
+
+* Bisecting
+
+git bisect start
+git bisect bad
+git bisect good rev
+git bisect bad
+git bisect good
+....
+git bisect reset
