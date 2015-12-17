@@ -2,22 +2,13 @@
 
 * General
 
-** List of packages
-- helm
-- haskell-mode
-- magit
-- go-mode
-- yasnippet
-- expand-region
-- company-mode
-- smartscan
-- projectile
-- helm-projectile
-
 ** Useful commands
 - proced                 :: show running processes
 - delete-duplicate-lines :: delete duplicate lines in the active region
 - auto-revert-tail-mode  :: like tail -f
+- calculator             :: calculator
+- quick-calc             :: evaluate expression in minibuffer (can be used for
+                            bin/oct/hex conversions)
 
 ** Useful key-bindings :keybinding:
 - C-x C-e             :: evaluate sexp
@@ -54,7 +45,7 @@
 ** todo list
 *** DONE Install markdown package
 *** TODO Figure out redo functionality (and bind to C-y if possible), try undo-tree package
-*** TODO Install flycheck
+*** DONE Install flycheck
 *** TODO (?) Key-binding go to terminal (C-C t)
 *** TODO (?) Copy file name into clipboard (function and key-binding)
 *** TODO (?) Make M-<up>, M-<down> work on the selected region
