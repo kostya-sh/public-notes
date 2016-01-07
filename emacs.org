@@ -98,7 +98,6 @@
 "C-c i" to show imenu
 "C-c p c" to compile project
 
-
 ** org-mode
 *** todo list
 **** DONE Enable flyspell mode for org-mode automatically
@@ -190,4 +189,9 @@ Sample Table with formulas:
 ** dired
 *** Key-bindings                                          :keybinding:custom:
 - M-RET   :: open file using default tool
+
+*** Key-bindings :keybinding:
 - C-x C-q :: enter wdired to rename/move files
+- Q       :: search and replace in marked files (dired-do-query-replace-regexp)
+- t       :: toggle marks
+- U       :: remove all marks
