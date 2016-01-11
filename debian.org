@@ -1,0 +1,15 @@
+* Debian
+
+** apt-get
+
+*** Remove a package and its config files
+
+apt-get purge package
+
+*** Install missing config files
+
+apt-get -o DPkg::Options::="--force-confmiss" install package
+
+*** Do not ask any questions during installation
+
+DEBIAN_FRONTEND=noninteractive apt-get -y install package
