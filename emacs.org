@@ -36,7 +36,7 @@
 - C-c left/right      :: undo/redo window layout (winner-mode)
 
 ** Key-bindings (custom) :keybinding:custom:
-- M-<up>, M-<down> :: move up/down the current line (see .emacs)
+- M-<up>, M-<down> :: move up/down the current line (move-text)
 - M-y              :: show kill ring (helm)
 - C-c i            :: helm-semantic-or-imenu (like Ctrl+F3 in Eclipse)
 - C-c b            :: helm-bookmarks (list, jump, add)
@@ -48,7 +48,7 @@
 *** DONE Install flycheck
 *** TODO (?) Key-binding go to terminal (C-C t)
 *** TODO (?) Copy file name into clipboard (function and key-binding)
-*** TODO (?) Make M-<up>, M-<down> work on the selected region
+*** DONE (?) Make M-<up>, M-<down> work on the selected region
 *** DONE Install and configure company-mode (completion)
 *** DONE (?) Install expand-region
 *** DONE spell check
