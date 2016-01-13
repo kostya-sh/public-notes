@@ -1,0 +1,9 @@
+* PostgreSQL
+
+** psql
+
+sudo -u postgres psql
+
+- \list           :: list databases
+- \connect dbname :: connect to the given database
+- \d              :: list tables
