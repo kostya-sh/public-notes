@@ -42,6 +42,16 @@
 - C-c b            :: helm-bookmarks (list, jump, add)
 - C-=              :: expand-region
 
+** Tips and Tricks
+
+*** Duplicate line
+
+C-a C-k C-y C-y
+Note: this requires (setq kill-whole-line t)
+
+C-S-Backspace C-v C-v
+Note: this requires cua-mode and doesn't work in all terminals
+
 ** todo list
 *** DONE Install markdown package
 *** TODO Figure out redo functionality (and bind to C-y if possible), try undo-tree package
