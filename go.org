@@ -76,3 +76,7 @@ ExampleXXX functions
 - binary.Size - size of fixed-sized value (e.g. slice of structs with int fields)
 - Read/Write methods for slices and structs (reflection based)
 - varint encoding (ULEB-128 for unsigned, signed mapped to unsigned using zig-zag encoding)
+** text/template
+
+To access a variable from the outer scope inside range use =$.outerScope=
+syntax.
