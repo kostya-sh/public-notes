@@ -1,3 +1,4 @@
+#+TITLE: Git
 #+FILETAGS: :git:
 
 * Working with branches

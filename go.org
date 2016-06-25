@@ -1,3 +1,4 @@
+#+TITLE: Go
 #+FILETAGS: :go:
 
 * Standard tools
@@ -12,7 +13,6 @@ installing packages that are dependencies of the test.
 ~-bench regexp~ - run only benchmarks matching the regexp (use regexp=. for all)
 
 ~-run regexp~ - run only tests matching the regexp
-
 
 * Built-in types
 ** slice

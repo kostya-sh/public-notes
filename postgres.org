@@ -1,6 +1,6 @@
-* PostgreSQL
+#+TITLE: PostgreSQL
 
-** psql
+* psql
 
 sudo -u postgres psql
 
