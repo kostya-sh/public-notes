@@ -53,19 +53,9 @@ C-S-Backspace C-v C-v
 Note: this requires cua-mode and doesn't work in all terminals
 
 ** todo list
-*** DONE Install markdown package
 *** TODO Figure out redo functionality (and bind to C-y if possible), try undo-tree package
-*** DONE Install flycheck
 *** TODO (?) Key-binding go to terminal (C-C t)
 *** TODO (?) Copy file name into clipboard (function and key-binding)
-*** DONE (?) Make M-<up>, M-<down> work on the selected region
-*** DONE Install and configure company-mode (completion)
-*** DONE (?) Install expand-region
-*** DONE spell check
-    Use ispell or flyspell-mode for that
-*** DONE Make selection non-persistent
-    This is done by customizing delete-selection-mode variable
-
 * Modes
 ** haskell-mode
 *** Key-bindings (custom) :keybinding:custom:
@@ -74,11 +64,6 @@ Note: this requires cua-mode and doesn't work in all terminals
 - C-c C-l :: load file in the interactive interpreter
 - C-c C-i :: show information about function/variable at cursor
 - C-c C-t :: show type of function/variable at cursor
-
-*** todo list
-**** TODO Make <DEL> and <BACKSPACE> delete selection in literate haskell-mode
-     It looks like it can be fixed by changing haskell-indentation.el
-     [X] Report bug (and send possible patch)
 
 ** golang-mode
 *** Key-bindings (standard)                                      :keybinding:
@@ -110,10 +95,7 @@ Note: this requires cua-mode and doesn't work in all terminals
 
 ** org-mode
 *** todo list
-**** DONE Enable flyspell mode for org-mode automatically
-**** DONE Make selection work using (C-)S-Arrow in org-mode
-     This is controlled by org-support-shift-select
-
+**** TODO Enable flyspell mode for org-mode automatically
 *** Markup
 - *bold*
 - /italic/
@@ -146,7 +128,7 @@ Note: this requires cua-mode and doesn't work in all terminals
 *** Working with tables
 Realigning and moving around: <TAB>, S-<TAB>, C-c C-c, <RET>, M-a, M-e
 
-Inserting/deliting/moving rows columns: M-<Arrow>, M-S-<Arrow>
+Inserting/deleting/moving rows columns: M-<Arrow>, M-S-<Arrow>
 
 Inserting a hline: C-c -, C-c <RET>
 
@@ -187,6 +169,7 @@ Sample Table with formulas:
   - M-e :: eshell
 - C-c p f :: find file in current project
 - C-c p i :: invalidate current project cache
+- C-c p c :: compile current project
 
 ** magit-mode
 *** Key-bindings (custom) :keybinding:custom:
